@@ -12,7 +12,12 @@ AuraHabit is built from a unified `.engine/` design system and operating memory,
 - **State & Data Fabric**: Kotlin `@Serializable` + `StateFlow` repository on Android, and Swift `Codable` + `@Observable` on iOS.
 - **Fluid Motion**: Tactile spring curves, press-scale interactions, and platform-native haptics.
 - **Autonomous Transpilation**: UI components transpiled bidirectionally between SwiftUI and Jetpack Compose using `ready transpile`.
-- **Mock Edge API**: Zero-dependency Cloudflare Worker & local Node.js API server (`backend/`) simulating cloud sync.
+- **Full Multi-Screen Suite**:
+  - **Today / Dashboard**: Daily Aura score ring, Level badge, streak indicator, and ritual check-in cards.
+  - **Analytics**: Key metric counters (Streak, Completion Rate) and weekly activity heatmaps.
+  - **Settings**: Edge Cloud Sync status, health check ping, and engine metadata.
+- **Live Networking Client**: `HabitSyncClient` (iOS `URLSession` & Android `HttpURLConnection`) connecting live to `backend/server.js`.
+- **Zero-Dependency Mock Edge Server**: Local Node HTTP server and Cloudflare Worker with realistic seed rituals.
 
 ---
 
@@ -23,12 +28,18 @@ AuraHabit/
 ├── .engine/             # Universal operating memory (APP.md, DESIGN.md, ROADMAP.md)
 ├── app/                 # Jetpack Compose native Android target
 │   └── src/main/java/com/aurahabit/app/
-│       ├── data/        # Reactive repositories (UserProfile, ItemRecord)
+│       ├── MainActivity.kt
+│       ├── data/        # Reactive repositories & HabitSyncClient
 │       └── ui/
+│           ├── navigation/  # AuraHabitNavShell (NavigationBar)
+│           ├── screens/     # DashboardScreen, AnalyticsScreen, SettingsScreen
 │           ├── components/  # Transpiled composables (HabitCard)
 │           └── motion/      # Modifier.pressScale() spring effects
 ├── ios/                 # SwiftUI native iOS target
 │   └── Sources/
+│       ├── App/         # AuraHabitApp.swift & MainTabView.swift
+│       ├── Data/        # HabitSyncClient.swift
+│       ├── Screens/     # DashboardView, AnalyticsView, SettingsView
 │       └── Views/       # HabitCard.swift
 └── backend/             # Cloudflare Worker & local Node mock server
 ```
