@@ -1,0 +1,129 @@
+{
+  "workspaceVersion": 5,
+  "workspaceType": "native-ready-engine",
+  "engineVersion": "0.7.0",
+  "app": {
+    "name": "AuraHabit",
+    "platform": "Android",
+    "framework": "Jetpack Compose",
+    "repoRoot": ".",
+    "packageNamespace": "[PACKAGE_NAMESPACE]",
+    "applicationId": "[APPLICATION_ID]",
+    "moduleName": ":app",
+    "nativeProjectStatus": "not_created",
+    "nativeProjectPath": "app/",
+    "nativeSourceRoot": "app/src/main/java/",
+    "nativeDesignSource": "app/src/main/java/[PACKAGE_PATH]/ui/theme/Theme.kt"
+  },
+  "sourceOfTruth": {
+    "engineDir": ".engine",
+    "designDocument": ".engine/DESIGN.md",
+    "appDocument": ".engine/APP.md",
+    "designIntake": ".engine/intake/design-intake.md",
+    "roadmap": ".engine/ROADMAP.md",
+    "baton": ".engine/next-prompt.md",
+    "gitWorkflow": "docs/core/git-workflow.md",
+    "bootstrapReceipt": "docs/bootstrap-receipt.md"
+  },
+  "designSources": {
+    "primary": "stitch",
+    "stitch": {
+      "projectId": "[STITCH_PROJECT_1_ID]",
+      "status": "active"
+    },
+    "figma": {
+      "fileKey": "[FIGMA_FILE_KEY]",
+      "status": "optional"
+    }
+  },
+  "gitWorkflow": {
+    "mode": "pending_preflight",
+    "defaultBranch": "main",
+    "branchPolicy": "feature_or_milestone_branch",
+    "taskCommitPolicy": "useful_reversible_checkpoint",
+    "pullRequestPolicy": "one_reusable_draft_per_feature_or_milestone",
+    "publicationPolicy": {
+      "mode": "local_only",
+      "remote": "origin",
+      "baseBranch": "main",
+      "allowedBranchPatterns": [
+        "feature/*",
+        "fix/*"
+      ],
+      "reuseExistingPullRequest": true,
+      "markReady": "explicit_only",
+      "merge": "explicit_only"
+    },
+    "mergeAuthority": "explicit_operator_or_repository_policy",
+    "normalizationRequired": false
+  },
+  "appMaturity": {
+    "stage": "prototype",
+    "nextTarget": "dogfood",
+    "note": "Native Android project not created yet; setup should create or confirm the Jetpack Compose scaffold before product feature implementation."
+  },
+  "operatingModeDefaults": {
+    "roadmapTemplate": "current",
+    "batonSchema": "current",
+    "metadataEvidenceSchema": "current",
+    "evidenceExpectation": "standard",
+    "regressionScope": "local"
+  },
+  "scaffoldSchemas": {
+    "roadmapTaskTemplate": "current",
+    "batonSchema": "current",
+    "metadataEvidenceSchema": "current"
+  },
+  "stitchProjects": {
+    "primaryConceptProject": {
+      "projectId": "[STITCH_PROJECT_1_ID]",
+      "name": "[STITCH_PROJECT_1_RESOURCE_NAME]",
+      "title": "[STITCH_PROJECT_1_NAME]",
+      "role": "[PRIMARY_CONCEPT_ROLE]"
+    },
+    "secondaryConceptProject": {
+      "projectId": "[STITCH_PROJECT_2_ID]",
+      "name": "[STITCH_PROJECT_2_RESOURCE_NAME]",
+      "title": "[STITCH_PROJECT_2_NAME]",
+      "role": "[SECONDARY_CONCEPT_ROLE]"
+    },
+    "legacyProjects": []
+  },
+  "referenceScreens": [],
+  "stitchOperations": {
+    "journal": ".engine/operations/current.json",
+    "activeProjectId": null,
+    "lastStatus": null,
+    "unresolvedOperationIds": []
+  },
+  "conceptCoverage": [],
+  "nativeDestinations": [],
+  "taskEvidence": [],
+  "designAdoptions": [],
+  "serviceMaturity": [],
+  "architectureReviewLog": [],
+  "riskRegister": [
+    {
+      "id": "risk-native-project-missing",
+      "surface": "native-scaffold",
+      "level": "medium",
+      "status": "open",
+      "note": "Native Android project has not been scaffolded yet.",
+      "linkedTask": "APP-001"
+    }
+  ],
+  "taskInjectionHistory": [],
+  "nativeScaffold": null,
+  "setupRun": {
+    "nativeScaffoldCreated": false,
+    "packageNamespace": "[PACKAGE_NAMESPACE]",
+    "applicationId": "[APPLICATION_ID]",
+    "gitPreflightStatus": "unknown",
+    "androidToolchainStatus": "unknown",
+    "firstBuildResult": "not_run",
+    "firstLaunchEvidence": null,
+    "batonValidation": "not_run",
+    "completionState": "blocked",
+    "receipt": "docs/bootstrap-receipt.md"
+  }
+}

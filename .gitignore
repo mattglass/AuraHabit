@@ -1,0 +1,17 @@
+# OS
+.DS_Store
+
+# Node
+node_modules/
+
+# Gradle / Android
+.gradle/
+build/
+app/build/
+*.apk
+*.aab
+
+# Xcode / Swift
+.build/
+*.xcuserstate
+DerivedData/

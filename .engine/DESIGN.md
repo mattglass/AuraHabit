@@ -1,0 +1,144 @@
+# Design System: AuraHabit
+
+> **Visual source of truth:** explicit user decisions, then evidence-backed
+> Stitch references, extracted artwork, and this document. Live implementation
+> records current adoption evidence; it becomes visual authority only after
+> acceptance or the applicable visual gate passes.
+> **Evidence:** `[LIVE_TOKENS / USER_DECISIONS / STITCH_PROJECT / INTAKE_PATHS]`
+> **Confidence:** `[OBSERVED / MIXED / PROPOSED]`
+
+## 1. Visual Theme & Atmosphere
+`AuraHabit` should feel like:
+
+- `[QUALITY_1]`
+- `[QUALITY_2]`
+- `[QUALITY_3]`
+- `[QUALITY_4]`
+- `[QUALITY_5]`
+
+The interface should feel like:
+- `[FEELS_LIKE_1]`
+- `[FEELS_LIKE_2]`
+- `[FEELS_LIKE_3]`
+
+It should not feel like:
+- `[NOT_FEEL_1]`
+- `[NOT_FEEL_2]`
+- `[NOT_FEEL_3]`
+- `[NOT_FEEL_4]`
+
+## 2. Color Palette & Roles (Material 3)
+
+### Primary family
+- **[PRIMARY_COLOR_NAME]** (`[HEX]`) — `[ROLE: primary]`
+- **[ON_PRIMARY_COLOR_NAME]** (`[HEX]`) — `[ROLE: onPrimary]`
+- **[PRIMARY_CONTAINER_COLOR_NAME]** (`[HEX]`) — `[ROLE: primaryContainer]`
+
+### Secondary & Tertiary family
+- **[SECONDARY_COLOR_NAME]** (`[HEX]`) — `[ROLE: secondary]`
+- **[TERTIARY_COLOR_NAME]** (`[HEX]`) — `[ROLE: tertiary]`
+
+### Surface & Background family
+- **[SURFACE_COLOR_NAME]** (`[HEX]`) — `[ROLE: surface]`
+- **[SURFACE_CONTAINER_COLOR_NAME]** (`[HEX]`) — `[ROLE: surfaceContainer]`
+- **[BACKGROUND_COLOR_NAME]** (`[HEX]`) — `[ROLE: background]`
+
+### Text & Outline family
+- **[ON_SURFACE_COLOR_NAME]** (`[HEX]`) — `[ROLE: onSurface / text]`
+- **[OUTLINE_COLOR_NAME]** (`[HEX]`) — `[ROLE: outline / borders]`
+
+### State family
+- **[SUCCESS_COLOR_NAME]** (`[HEX]`) — `[ROLE]`
+- **[WARNING_COLOR_NAME]** (`[HEX]`) — `[ROLE]`
+- **[ERROR_COLOR_NAME]** (`[HEX]`) — `[ROLE: error]`
+- **[DISABLED_COLOR_NAME]** (`[HEX]`) — `[ROLE]`
+
+## 3. Typography Rules (Material 3 Scale)
+
+### Display & Headline voice
+- `[HEADLINE_RULE_1]`
+- `[HEADLINE_RULE_2]`
+
+### Title & Body voice
+- `[BODY_RULE_1]`
+- `[BODY_RULE_2]`
+
+### Hierarchy guidance
+- `[HIERARCHY_RULE_1]`
+- `[HIERARCHY_RULE_2]`
+- `[HIERARCHY_RULE_3]`
+
+## 4. Component Stylings
+
+### Buttons
+- **Primary button:** `[PRIMARY_BUTTON_STYLE]`
+- **Filled tonal button:** `[TONAL_BUTTON_STYLE]`
+- **Outlined / Text button:** `[OUTLINED_BUTTON_STYLE]`
+
+### Cards
+- `[CARD_RULE_1]`
+- `[CARD_RULE_2]`
+- `[CARD_RULE_3]`
+
+### Inputs
+- `[INPUT_RULE_1]`
+- `[INPUT_RULE_2]`
+- `[INPUT_RULE_3]`
+
+### Content modules
+- `[MODULE_RULE_1]`
+- `[MODULE_RULE_2]`
+- `[MODULE_RULE_3]`
+
+### Shape, depth, and materials
+- `[GEOMETRY_RULE]`
+- `[ELEVATION_RULE]`
+- `[DYNAMIC_COLOR_RULE]`
+
+### Interactive states
+- `[PRESSED_SELECTED_FOCUSED_RULE]`
+- `[DISABLED_LOADING_RULE]`
+- `[EMPTY_ERROR_SUCCESS_COMPLETION_RULE]`
+
+### Artwork and motifs
+- `[ARTWORK_RULE]`
+- `[MOTIF_RULE]`
+- `[ASSET_PROVENANCE_RULE]`
+
+## 5. Layout Principles
+- `[LAYOUT_RULE_1]`
+- `[LAYOUT_RULE_2]`
+- `[LAYOUT_RULE_3]`
+- `[LAYOUT_RULE_4]`
+- `[LAYOUT_RULE_5]`
+- `[ANDROID_PHONE_TABLET_ADAPTATION_RULE]`
+- `[MOTION_PURPOSE_RULE]`
+- `[REDUCED_MOTION_RULE]`
+
+## 6. Stitch Use Policy
+For future Stitch prompts targeting this app:
+
+**DESIGN SYSTEM (REQUIRED):**
+- Platform: Android (Phone and Tablet)
+- Theme: `[THEME_RULE]`
+- Palette: `[PALETTE_RULE]`
+- Interaction style: `[INTERACTION_RULE]`
+- Layout: `[LAYOUT_POLICY_RULE]`
+- Artwork: `[ARTWORK_POLICY_RULE]`
+- Accessibility: `[ACCESSIBILITY_POLICY_RULE]`
+
+## 7. Suggested Concept Directions
+- `[CONCEPT_DIRECTION_1]`
+- `[CONCEPT_DIRECTION_2]`
+- `[CONCEPT_DIRECTION_3]`
+- `[CONCEPT_DIRECTION_4]`
+
+## 8. Banned Patterns
+- no fake KPI dashboards unless the product truly requires real metrics
+- no generic startup template filler
+- no generic AI copy, fabricated social proof, or unsupported claims
+- no incomplete loading, empty, error, success, or completion states where applicable
+- no inaccessible motion without a reduced-motion path
+- no direct web-layout exports that do not feel native to Android
+- `[BANNED_PATTERN_1]`
+- `[BANNED_PATTERN_2]`
