@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "runId": "aura-bootstrap-01",
+  "requestedProjectTitle": "AuraHabit",
+  "createdAt": "2026-10-07T18:02:48.676137+00:00",
+  "updatedAt": "2026-10-07T18:02:48.718825+00:00",
+  "activeProject": {
+    "id": "18210720106342944745",
+    "title": "AuraHabit",
+    "source": "created_current_run",
+    "adoptedAt": "2026-10-07T18:02:48.718664+00:00"
+  },
+  "referenceProjects": [],
+  "capabilities": {},
+  "recoveryPolicy": {
+    "maxReplacementAttempts": 1,
+    "decompositionThreshold": 2,
+    "replacementMode": "autonomous",
+    "updatedAt": "2026-10-07T18:02:48.676663+00:00"
+  },
+  "operations": []
+}
